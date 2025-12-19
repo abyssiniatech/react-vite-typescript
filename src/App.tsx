@@ -1,8 +1,12 @@
-import Square from "./omponents/typescript/TypescriptFundaments";
+import Greet from "./omponents/typescript/Greet";
 const App = () => {
   return (
     <div>
-      <Square num={12} />
+        <Greet 
+        name="surafel mengist"
+        renderTimes={12}
+        islogin = {false}
+        />
     </div>
   );
 };

@@ -1,12 +1,11 @@
-import Greet from "./omponents/typescript/Greet";
+import Increment from "./omponents/Projects/Increment/Increment";
+
 const App = () => {
+
+  
   return (
     <div>
-        <Greet 
-        name="surafel mengist"
-        renderTimes={12}
-        islogin = {false}
-        />
+      <Increment  />
     </div>
   );
 };

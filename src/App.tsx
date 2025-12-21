@@ -1,11 +1,11 @@
-import Increment from "./omponents/Projects/Increment/Increment";
+import Todo from "./omponents/Projects/Todo/Todo";
 
 const App = () => {
 
   
   return (
     <div>
-      <Increment  />
+      <Todo />
     </div>
   );
 };

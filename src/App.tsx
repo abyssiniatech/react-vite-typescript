@@ -1,13 +1,10 @@
-import Basicjsx from "./omponents/fundamentals/Basicjsx";
-import Toggle from "./omponents/fundamentals/Toggle";
+
+import List from "./omponents/fundamentals/List";
+// import { users } from "./users";
+import { users } from "./omponents/fundamentals/users";
 
 const App = () => {
-  return (
-    <div>
-      <Basicjsx />
-      <Toggle />
-    </div>
-  )
+  return <List users={users} />;
 };
 
 export default App;

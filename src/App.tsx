@@ -1,11 +1,9 @@
-import Button from "./omponents/fundamentals/Button";
-import { useState } from "react";
+import ReactForm from "./omponents/fundamentals/ReactForm";
 
 const App = () => {
-  const [value, setValue] = useState("");
   return (
     <div>
-      <Button value={value} setValue={setValue} />
+       <ReactForm />
     </div>
   )
 };

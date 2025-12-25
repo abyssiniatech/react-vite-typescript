@@ -1,11 +1,11 @@
-import Event from "./omponents/Event";
+import Button from "./omponents/fundamentals/Button";
 import { useState } from "react";
 
 const App = () => {
-  const [isSubmitted, setIsSubmitted] = useState(true);
+  const [value, setValue] = useState("");
   return (
     <div>
-      <Event isSubmitted={isSubmitted} setIsSubmitted={setIsSubmitted} />
+      <Button value={value} setValue={setValue} />
     </div>
   )
 };

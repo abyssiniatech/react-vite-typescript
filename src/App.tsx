@@ -1,11 +1,11 @@
-import Prop from "./omponents/fundamentals/Prop";
+import Event from "./omponents/Event";
 import { useState } from "react";
+
 const App = () => {
-  const [count, setCount] = useState(0);
+  const [isSubmitted, setIsSubmitted] = useState(true);
   return (
     <div>
-       
-      <Prop count={count} setCount={setCount} />
+      <Event isSubmitted={isSubmitted} setIsSubmitted={setIsSubmitted} />
     </div>
   )
 };

@@ -1,13 +1,11 @@
-import Prop from "./omponents/fundamentals/Prop"
+import Prop from "./omponents/fundamentals/Prop";
+import { useState } from "react";
 const App = () => {
+  const [count, setCount] = useState(0);
   return (
     <div>
-        <Prop name="John Doe" age={30} isStudent={false} />
-        <Prop name="John Doe" age={30} isStudent={false}>
-          <div>Welcome to my channel</div>
-          <p>these is the child props</p>
-        </Prop>
-      
+       
+      <Prop count={count} setCount={setCount} />
     </div>
   )
 };

@@ -1,8 +1,10 @@
-import UseState from "./omponents/Hooks/UseState"
+import TodoWithTypescript from "./omponents/Hooks/TodoWithTypescript";
+
+
 const App = () => {
   return (
     <div>
-       <UseState />
+      <TodoWithTypescript />
     </div>
   )
 };

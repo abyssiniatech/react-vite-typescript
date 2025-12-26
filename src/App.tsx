@@ -1,10 +1,10 @@
-import GetData from "./omponents/Projects/fetch/GetData";
+import Async from "./omponents/Projects/fetch/Async";
 
 
 const App = () => {
   return (
     <div>
-    <GetData />
+      <Async />
     </div>
   )
 };

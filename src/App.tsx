@@ -1,10 +1,10 @@
-import TodoWithTypescript from "./omponents/Hooks/TodoWithTypescript";
+import Basic from "./omponents/typescript/Basic";
 
 
 const App = () => {
   return (
     <div>
-      <TodoWithTypescript />
+        <Basic email={"sura@gmail.com"} phone={65} name={"surafel"} age={10} isRegister={false} />
     </div>
   )
 };

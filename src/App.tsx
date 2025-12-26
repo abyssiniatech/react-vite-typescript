@@ -1,10 +1,10 @@
-import Useeffect from "./omponents/fundamentals/Useeffect";
+import GetData from "./omponents/Projects/fetch/GetData";
+
 
 const App = () => {
   return (
     <div>
-   
-      <Useeffect />
+    <GetData />
     </div>
   )
 };

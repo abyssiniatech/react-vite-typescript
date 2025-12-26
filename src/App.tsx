@@ -1,10 +1,10 @@
-import Basic from "./omponents/typescript/Basic";
-
+import Useeffect from "./omponents/fundamentals/Useeffect";
 
 const App = () => {
   return (
     <div>
-        <Basic email={"sura@gmail.com"} phone={65} name={"surafel"} age={10} isRegister={false} />
+   
+      <Useeffect />
     </div>
   )
 };

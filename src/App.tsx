@@ -1,10 +1,9 @@
-import Async from "./omponents/Projects/fetch/Async";
-
+import FetchUsers from './omponents/Projects/fetch/FetchUsers';
 
 const App = () => {
   return (
     <div>
-      <Async />
+      <FetchUsers />
     </div>
   )
 };

@@ -1,10 +1,10 @@
-import UsersData from "./omponents/fundamentals/Array/UsersData";
-
-
+import Parent1 from "./omponents/fundamentals/Props/Parent1";
+import "/src/App.css"
 const App = () => {
   return (
     <div>
-        <UsersData />
+      <Parent1 />
+      
     </div>
   )
 };

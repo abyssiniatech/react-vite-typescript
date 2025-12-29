@@ -1,14 +1,14 @@
 type Child1Props = {
-    component:React.ComponentType;
+    message:React.ComponentType;
 }
 
-const Child1 = ({component}: Child1Props) => {
-   const Component = component;
+const Child1 = (props: Child1Props) => {
+    
   return (
     <div>
-      <h3>Child Component about js</h3>
-      <Component />
+       <props.message />
     </div>
+  
   )
 };
 

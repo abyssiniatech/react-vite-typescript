@@ -1,14 +1,10 @@
-
-import Show from "./omponents/Project/Show";
-
+import DaynamicArray from "./omponents/Project/DaynamicArray";
 const App = () => {
-  
   return (
     <div>
-     
-      <Show />
+      <DaynamicArray />
     </div>
-  )
+  );
 };
 
 export default App;

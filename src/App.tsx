@@ -2,7 +2,7 @@ import DaynamicArray from "./omponents/Project/DaynamicArray";
 const App = () => {
   return (
     <div>
-      <DaynamicArray />
+      <DaynamicArray />q
     </div>
   );
 };

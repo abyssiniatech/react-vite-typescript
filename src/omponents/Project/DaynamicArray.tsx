@@ -2,10 +2,11 @@ type Student = {
   name: string;
   age: number;
   email: string;
+  add?:string;
 };
 
 const Students: Student[] = [
-  { name: "Surafel", age: 25, email: "sura@gmail.com" },
+  { name: "Surafel", age: 25, email: "sura@gmail.com",add:"Addis Ababa" },
   { name: "Abel", age: 26, email: "abel@gmail.com" },
   { name: "Nati", age: 12, email: "nati@gmail.com" },
   { name: "Aster", age: 25, email: "aster@gmail.com" },
@@ -20,6 +21,7 @@ const DaynamicArray = () => {
           <h2>Name: {student.name}</h2>
           <p>Age: {student.age}</p>
           <p>Email: {student.email}</p>
+          <p>Add: {student.add}</p>
           <hr />
         </div>
       ))}

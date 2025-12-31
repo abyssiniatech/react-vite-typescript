@@ -1,11 +1,12 @@
-import DaynamicList from "./omponents/fundamentals/Props/DaynamicList";
+import TodoApp from "./omponents/Projects/TodoApp";
+
+
 const App = () => {
-    // logi here 
-   return(
+  return (
     <div>
-     <DaynamicList />
+      <TodoApp />
     </div>
-   )
+  )
 };
 
 export default App;

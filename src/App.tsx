@@ -1,11 +1,11 @@
-import StringArr from "./omponents/fundamentals/Props/StringArr";
-
+import DaynamicList from "./omponents/fundamentals/Props/DaynamicList";
 const App = () => {
-  return (
+    // logi here 
+   return(
     <div>
-      <StringArr />
+     <DaynamicList />
     </div>
-  );
+   )
 };
 
 export default App;

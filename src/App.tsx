@@ -1,8 +1,9 @@
-import DaynamicArray from "./omponents/Project/DaynamicArray";
+import StringArr from "./omponents/fundamentals/Props/StringArr";
+
 const App = () => {
   return (
     <div>
-      <DaynamicArray />q
+      <StringArr />
     </div>
   );
 };

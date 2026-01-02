@@ -3,7 +3,7 @@ import Home from "./pages/home/Home";
 import About from "./pages/about/About";
 import Contact from "./pages/contact/Contact";
 import Product from "./pages/product/Product";
-
+import  Main from "./pages/main/Main"
 const App = () => {
   
   return (
@@ -13,6 +13,16 @@ const App = () => {
         <NavLink className="text-white p-4 rounded hover: bg-indigo-500 border-gray-100 border" to="/about" >About</NavLink>
         <NavLink className="text-white p-4 rounded hover: bg-indigo-500 border-gray-100 border" to="/Product" >Product</NavLink>
         <NavLink className="text-white p-4 rounded hover: bg-indigo-500 border-gray-100 border" to="/contact" >Contact</NavLink>
+<NavLink
+  to="/main"
+  className={({ isActive }) =>
+    isActive ? "text-pink-500 font-bold" : "text-white"
+  }
+>
+  Home
+</NavLink>
+
+        
         </header>
         <main className="bg-indigo-900 text-white h-screen ">
           <Routes>
@@ -20,6 +30,7 @@ const App = () => {
             <Route  path="/about" element ={<About/>}/>
             <Route path="/contact" element={<Contact />} />
             <Route path="/product" element={<Product />}/>
+            <Route  path="./main" element = {<Main />}/>
           </Routes>
         </main>
          <footer className="bg-indigo-600 text-red">

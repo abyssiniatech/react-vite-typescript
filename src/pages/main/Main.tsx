@@ -1,8 +1,9 @@
-const Main = () =>{
-    return(
-        <div>
-            <h1>main section</h1>
-        </div>
-    )
+
+
+const Main = () => {
+  return (
+    <div> page</div>
+  )
 };
-export default Main
+
+export default Main;

@@ -1,16 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { BrowserRouter } from "react-router-dom";
-import App from "./app/App";
-import { ThemeProvider } from "./context/ThemeContext";
-import "./index.css";
 
-ReactDOM.createRoot(document.getElementById("root")!).render(
+
+import "./index.css"; // Tailwind included
+import App from "./App"
+
+const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement);
+root.render(
   <React.StrictMode>
-    <ThemeProvider>
-      <BrowserRouter>
-        <App />
-      </BrowserRouter>
-    </ThemeProvider>
+    <App />
   </React.StrictMode>
 );

@@ -1,9 +1,16 @@
-
+import { ThemeProvider } from "./context/ThemeContext";
+import Navbar from "./components/Navbar";
+import Page from "./components/Page";
 
 const App = () => {
   return (
-    <div>app folder and also it is the best</div>
-  )
+    <ThemeProvider>
+      <div className="min-h-screen transition-colors duration-300">
+        <Navbar />
+        <Page />
+      </div>
+    </ThemeProvider>
+  );
 };
 
 export default App;

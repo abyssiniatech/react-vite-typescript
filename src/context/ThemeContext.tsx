@@ -1,34 +1,38 @@
-import { createContext, useContext, useEffect, useState , type ReactNode } from "react";
+import { createContext, useContext, useState, type ReactNode } from "react";
 
-type Theme = "light" | "dark";
-
-interface ThemeContextType {
-  theme: Theme;
+/* 1. Define the context type */
+type ThemeContextType = {
+  dark: boolean;
   toggleTheme: () => void;
-}
+};
 
-const ThemeContext = createContext<ThemeContextType | null>(null);
+/* 2. Create context with undefined default */
+const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
-export const ThemeProvider = ({ children }: { children: ReactNode }) => {
-  const [theme, setTheme] = useState<Theme>("light");
+/* 3. Props for the provider */
+type ThemeProviderProps = {
+  children: ReactNode;
+};
 
-  const toggleTheme = () =>
-    setTheme(prev => (prev === "light" ? "dark" : "light"));
+/* 4. ThemeProvider component */
+export const ThemeProvider = ({ children }: ThemeProviderProps) => {
+  const [dark, setDark] = useState(false);
 
-  useEffect(() => {
-    document.documentElement.classList.toggle("dark", theme === "dark");
-  }, [theme]);
+  const toggleTheme = () => setDark((prev) => !prev);
 
   return (
-    <ThemeContext.Provider value={{ theme, toggleTheme }}>
+    <ThemeContext.Provider value={{ dark, toggleTheme }}>
       {children}
     </ThemeContext.Provider>
   );
 };
 
+/* 5. Custom hook for consuming context safely */
 // eslint-disable-next-line react-refresh/only-export-components
 export const useTheme = () => {
   const context = useContext(ThemeContext);
-  if (!context) throw new Error("useTheme must be used inside ThemeProvider");
+  if (!context) {
+    throw new Error("useTheme must be used inside ThemeProvider");
+  }
   return context;
 };

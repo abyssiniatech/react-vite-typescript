@@ -14,7 +14,7 @@ const DashboardLayout = () => {
 
       <main className="flex-1 p-6 bg-gray-100">
         <Outlet />
-       <NavLink to ="/"> <button className="bg-indigo-800 rounded-lg text-white px-4 py-2">go to home page</button></NavLink>
+       <NavLink to ="/" className="flex-col justify-between items-center"> <button className="bg-indigo-800 rounded-lg text-white  px-4 py-2 flex justify-center items-center">⏪go to home page</button></NavLink>
       </main>
     </div>
   );

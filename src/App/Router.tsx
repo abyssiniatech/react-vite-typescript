@@ -11,6 +11,7 @@ import Profile from "../pages/Dashboard/Profile";
 import Settings from "../pages/Dashboard/Settings";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import Notfound from "../pages/Notfound";
 
 const Router = () => {
   return (
@@ -22,14 +23,16 @@ const Router = () => {
       <Route element={<MainLayout />}>
         <Route path="/" element={<Home />} />
         <Route path="/blogs" element={<Blogs />} />
+        <Route path = "*"  element={<Notfound />} />
         <Route path="/blogs/:id" element={<BlogDetails />} />
       </Route>
-
+ 
       {/* Dashboard layout */}
       <Route path="/dashboard" element={<DashboardLayout />}>
         <Route index element={<DashboardHome />} />
         <Route path="profile" element={<Profile />} />
         <Route path="settings" element={<Settings />} />
+        
       </Route>
     </Routes>
     {/* footer section */}

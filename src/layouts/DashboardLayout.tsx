@@ -1,6 +1,7 @@
-import { Outlet, NavLink } from "react-router-dom";
+import { Outlet, NavLink,useNavigate } from "react-router-dom";
 
 const DashboardLayout = () => {
+ const navigate = useNavigate();
   return (
     <div className="flex min-h-screen">
       <aside className="w-64 bg-gray-900 text-white p-4">
@@ -14,7 +15,7 @@ const DashboardLayout = () => {
 
       <main className="flex-1 p-6 bg-gray-100">
         <Outlet />
-       <NavLink to ="/" className="flex-col justify-between items-center"> <button className="bg-indigo-800 rounded-lg text-white  px-4 py-2 flex justify-center items-center">⏪go to home page</button></NavLink>
+          <button className="bg-pink-800 text-white rounded-lg border-0 px-4 py-2 text-2xl" onClick={() =>navigate('/')}>go to home page</button>
       </main>
     </div>
   );

@@ -9,13 +9,14 @@ import BlogDetails from "../pages/BlogDetails";
 import DashboardHome from "../pages/Dashboard/DashboardHome";
 import Profile from "../pages/Dashboard/Profile";
 import Settings from "../pages/Dashboard/Settings";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 const Router = () => {
   return (
     <div>
-       <header className="bg-indigo-700 text-pink-900 flex  font-bold items-center justify-center p-4 text-3xl">
-        <h1>React Router</h1>
-       </header>
+      {/* header section */}
+       <Header />
     <Routes>
       {/* Public layout */}
       <Route element={<MainLayout />}>
@@ -32,9 +33,7 @@ const Router = () => {
       </Route>
     </Routes>
     {/* footer section */}
-    <footer className="h-screen flex justify-center  items-center bg-black text-white text-center">
-         <h2>&copy; {new Date().getFullYear()} | Surafel mengist</h2>
-    </footer>
+     <Footer />
     </div>
   );
 };

@@ -9,7 +9,7 @@ const Page = () => {
         dark ? "bg-gray-800 text-white" : "bg-white text-black"
       }`}
     >
-      <h2 className="text-2xl font-semibold mb-4">Context API with React + TS</h2>
+      <h2 className="text-2xl font-semibold mb-4">Context API with React + TS and also Amazing</h2>
       <p>This page responds to the Dark Mode toggle globally using Context API.</p>
     </main>
   );

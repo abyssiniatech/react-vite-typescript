@@ -1,8 +1,7 @@
 
 // import Objects from "./components/hooks/Objects";
 
-import Second from "./components/hooks/useref/Second";
-
+import Counter from "./components/hooks/useref/Counter";
 
 
 
@@ -11,7 +10,7 @@ const App = () => {
 
   return(
       <div>
-       <Second />
+       <Counter />
      </div>
   ) 
 };

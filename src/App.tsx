@@ -1,15 +1,15 @@
 
 // import Objects from "./components/hooks/Objects";
 
-import Lab2 from "./components/hooks/Lab2";
+import Lab1 from "./components/hooks/useeffect/Lab1";
+
 
 const App = () => {
 
 
   return(
       <div>
-        {/* <Objects /> */}
-        <Lab2 />
+      <Lab1 />
      </div>
   ) 
 };

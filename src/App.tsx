@@ -1,7 +1,8 @@
 
 // import Objects from "./components/hooks/Objects";
 
-import Fetch from "./components/hooks/useeffect/Fetch";
+import First from "./components/hooks/useref/First";
+
 
 
 
@@ -10,7 +11,7 @@ const App = () => {
 
   return(
       <div>
-        <Fetch />
+       <First />
      </div>
   ) 
 };

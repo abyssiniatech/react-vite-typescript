@@ -1,12 +1,15 @@
 
-import Objects from "./components/hooks/Objects";
+// import Objects from "./components/hooks/Objects";
+
+import Lab2 from "./components/hooks/Lab2";
 
 const App = () => {
 
 
   return(
       <div>
-        <Objects />
+        {/* <Objects /> */}
+        <Lab2 />
      </div>
   ) 
 };

@@ -1,8 +1,8 @@
 
 // import Objects from "./components/hooks/Objects";
 
-import Lab1 from "./components/hooks/useeffect/Lab1";
-import Lab2 from "./components/hooks/useeffect/Lab2";
+import Fetch from "./components/hooks/useeffect/Fetch";
+
 
 
 const App = () => {
@@ -10,8 +10,7 @@ const App = () => {
 
   return(
       <div>
-      <Lab1 />
-      <Lab2 />
+        <Fetch />
      </div>
   ) 
 };

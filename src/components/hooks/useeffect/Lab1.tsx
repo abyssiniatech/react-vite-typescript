@@ -10,6 +10,9 @@ const Lab1 = () => {
          setTimeout(()=>{
       document.title= `${counter} times render`
          },2000)
+        return()=>{
+          console.log("clear the timer")
+        }
     },[counter])
   return (
     <div className="h-screen flex justify-center items-center flex-col">

@@ -1,16 +1,19 @@
-import { ThemeProvider } from "./context/ThemeContext";
-import Navbar from "./components/Navbar";
-import Page from "./components/Page";
+
+// import Objects from "./components/hooks/Objects";
+
+import IncrementApp from "./components/hooks/useref/IncrementApp";
+
+
+
 
 const App = () => {
-  return (
-    <ThemeProvider>
-      <div className="min-h-screen transition-colors duration-300">
-        <Navbar />
-        <Page />
-      </div>
-    </ThemeProvider>
-  );
+
+
+  return(
+      <div>
+       <IncrementApp />
+     </div>
+  ) 
 };
 
 export default App;

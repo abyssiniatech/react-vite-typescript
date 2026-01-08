@@ -1,7 +1,8 @@
 
 // import Objects from "./components/hooks/Objects";
 
-import Counter from "./components/hooks/useref/Counter";
+import IncrementApp from "./components/hooks/useref/IncrementApp";
+
 
 
 
@@ -10,7 +11,7 @@ const App = () => {
 
   return(
       <div>
-       <Counter />
+       <IncrementApp />
      </div>
   ) 
 };

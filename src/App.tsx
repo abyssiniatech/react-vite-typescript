@@ -1,16 +1,10 @@
-import ComponentA from "./components/hooks/probdriling/ComponentA";
-
-
-
-
+import Counter from "./components/hooks/usecontext/Context1";
 const App = () => {
-
-
-  return(
-      <div>
-      <ComponentA />
-     </div>
-  ) 
+  return (
+    <div className="p-6">
+      <Counter />
+    </div>
+  );
 };
 
 export default App;

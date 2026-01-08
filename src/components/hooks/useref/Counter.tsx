@@ -11,7 +11,7 @@ const Counter = () => {
   return (
     <div>
       <p>Counter (check console)</p>
-      <button onClick={handleInc}>Increment</button>
+      <button className="bg-blue-700 px-4 py-2 text-white rounded text-3xl text-center font-bold" onClick={handleInc}>Increment</button>
     </div>
   );
 };

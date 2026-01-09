@@ -1,16 +1,12 @@
-import { ThemeProvider } from "./context/ThemeContext";
-import Navbar from "./components/Navbar";
-import Page from "./components/Page";
+import Reducer from "./components/hooks/usereducer/Reducer";
+
 
 const App = () => {
   return (
-    <ThemeProvider>
-      <div className="min-h-screen transition-colors duration-300">
-        <Navbar />
-        <Page />
-      </div>
-    </ThemeProvider>
-  );
+    <div>
+      <Reducer />
+    </div>
+  )
 };
 
 export default App;

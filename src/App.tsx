@@ -1,10 +1,12 @@
-import Counter from "./components/hooks/usecontext/Context1";
+import Reducer from "./components/hooks/usereducer/Reducer";
+
+
 const App = () => {
   return (
-    <div className="p-6">
-      <Counter />
+    <div>
+      <Reducer />
     </div>
-  );
+  )
 };
 
 export default App;

@@ -1,10 +1,9 @@
-import Reducer from "./components/hooks/usereducer/Reducer";
-
+import Counter from "./components/Counter";
 
 const App = () => {
   return (
     <div>
-      <Reducer />
+      <Counter />
     </div>
   )
 };

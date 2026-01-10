@@ -14,8 +14,7 @@ export const CounterProvider = ({ children }: Props) => {
 
   return (
     <CounterContext.Provider
-      value={{ count, increment, decrement, reset }}
-    >
+      value={{ count, increment, decrement, reset }} >
       {children}
     </CounterContext.Provider>
   );
